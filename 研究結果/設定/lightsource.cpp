@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+#define N 10
+#define R 0.000002
+#define PI 3.1415926
+#define V 1000000000000
+
+using namespace std;
+
+int main(void){
+
+/*
+feed = Y -7.5E-06 0 7.27450204458515E-06 1 0 377
+*/
+
+    string strFeed ="feed = ";
+    float theta = 12.0/180.0*PI;
+    int k=0;
+    float x_bias = -7.5e-6;
+    float y_bias = 0.0;
+    float z_bias = 1.0e-5;
+    float v = 0.0;
+
+    strFeed += "Y ";
+
+    for(int i=-N;i<N+1;i++){
+        float x = (float)i*2e-7;
+        for(int j=-N;j<N+1;j++){
+            float y = (float)j*2e-7;
+            if(sqrt(x*x+y*y)<R){
+                float z = x*sin(theta);
+                float xx = x_bias + x*cos(theta);
+                v = exp(-V*(x*x+y*y));
+                cout << strFeed  << xx << ' ' << y + y_bias  << ' ' << z + z_bias << ' ' << v << " 0 377" << endl;
+                k++;
+            }
+
+        }
+
+    }
+    //cout << k << endl;
+    //cout << theta << endl;
+    return 0;
+
+}
