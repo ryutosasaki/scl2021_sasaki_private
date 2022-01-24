@@ -1,14 +1,14 @@
 OpenFDTD 2 7
 title = GC
-xmesh = -4E-05 1600 4E-05
+xmesh = -2E-05 800 2E-05
 ymesh = -2E-05 800 2E-05
 zmesh = -2.2E-06 220 2.2E-05
 material = 1 12.1 0 1 0 Si
 material = 1 2.103 0 1 0 SiO2
 material = 1 1 100 1 0 cover
-geometry = 0 1 -4E-05 4E-05 -2E-05 2E-05 -2.2E-06 2.2E-05
-geometry = 3 1 -4E-05 4E-05 -2E-05 2E-05 -2.2E-06 2E-06
-geometry = 2 1 -4E-05 4E-05 -2E-05 2E-05 1.1E-07 2.2E-07
+geometry = 0 1 -2E-05 2E-05 -2E-05 2E-05 -2.2E-06 2.2E-05
+geometry = 3 1 -2E-05 2E-05 -2E-05 2E-05 -2.2E-06 2E-06
+geometry = 2 1 -2E-05 2E-05 -2E-05 2E-05 1.1E-07 2.2E-07
 geometry = 2 1 -2E-05 -1.95E-05 -2E-05 2E-05 2.2E-07 3.3E-07
 geometry = 2 1 -1.9E-05 -1.85E-05 -2E-05 2E-05 2.2E-07 3.3E-07
 geometry = 2 1 -1.8E-05 -1.75E-05 -2E-05 2E-05 2.2E-07 3.3E-07
@@ -49,9 +49,6 @@ geometry = 2 1 1.6E-05 1.65E-05 -2E-05 2E-05 2.2E-07 3.3E-07
 geometry = 2 1 1.7E-05 1.75E-05 -2E-05 2E-05 2.2E-07 3.3E-07
 geometry = 2 1 1.8E-05 1.85E-05 -2E-05 2E-05 2.2E-07 3.3E-07
 geometry = 2 1 1.9E-05 1.95E-05 -2E-05 2E-05 2.2E-07 3.3E-07
-geometry = 0 1 -4E-05 4E-05 -2E-05 2E-05 -2.2E-06 2.2E-05
-geometry = 3 1 -4E-05 4E-05 -2E-05 2E-05 -2.2E-06 2E-06
-geometry = 2 1 -4E-05 4E-05 -2E-05 2E-05 1.1E-07 2.2E-07
 geometry = 2 1 -2E-05 2E-05 -2E-05 -1.95E-05 2.2E-07 3.3E-07
 geometry = 2 1 -2E-05 2E-05 -1.9E-05 -1.85E-05 2.2E-07 3.3E-07
 geometry = 2 1 -2E-05 2E-05 -1.8E-05 -1.75E-05 2.2E-07 3.3E-07
@@ -909,6 +906,6 @@ near2ddb = 1
 near2dcontour = 0
 near2dobj = 1
 near2dnoinc = 0
-window2d = 750 500 13 0
-window3d = 600 600 12 60 30
+window2d = 750 500 15 0
+window3d = 600 600 15 60 30
 end
